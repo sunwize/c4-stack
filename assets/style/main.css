@@ -1,0 +1,10 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+body {
+  @apply min-h-dvh flex flex-col overflow-x-hidden;
+}
+
+#__nuxt {
+  @apply flex-1 flex flex-col;
+}
