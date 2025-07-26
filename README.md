@@ -1,5 +1,11 @@
 # The C4 Stack
 
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/your-image-id" alt="C4 Stack Logo" width="400"/>
+  
+  ### C4 - The Explosive Stack
+</div>
+
 A modern, type-safe boilerplate for building web applications with **Nuxt 4**, **TypeScript**, and **end-to-end type safety**.
 
 ## 🚀 Features
