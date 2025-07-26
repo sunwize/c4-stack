@@ -1,4 +1,4 @@
-# Full-Stack TypeScript Boilerplate
+# The C4 Stack
 
 A modern, type-safe boilerplate for building web applications with **Nuxt 4**, **TypeScript**, and **end-to-end type safety**.
 
