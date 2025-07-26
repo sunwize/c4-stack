@@ -1,6 +1,4 @@
-<script lang="ts" setup>
-
-</script>
+<script lang="ts" setup></script>
 
 <template>
   <div class="flex-1 flex flex-col items-start bg-gray-50 dark:bg-gray-900">

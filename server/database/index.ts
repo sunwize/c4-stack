@@ -1,4 +1,5 @@
 import "dotenv/config";
+
 import type { PostgresJsDatabase } from "drizzle-orm/postgres-js";
 import { drizzle } from "drizzle-orm/postgres-js";
 import type postgres from "postgres";
@@ -7,12 +8,11 @@ import { env } from "../../shared/env/server";
 import * as schema from "./schemas";
 
 declare global {
-  // eslint-disable-next-line vars-on-top
   var __db__:
     | (PostgresJsDatabase<typeof schema> & {
         $client: postgres.Sql;
       })
-      | undefined;
+    | undefined;
 }
 
 export function getDb() {

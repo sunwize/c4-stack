@@ -1,4 +1,5 @@
 import type { InferRouterInputs, InferRouterOutputs } from "@orpc/server";
+
 import { hello } from "./hello";
 
 export const router = {
