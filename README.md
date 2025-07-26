@@ -17,12 +17,14 @@ A modern, type-safe boilerplate for building web applications with **Nuxt 4**, *
 ## 🏗️ Tech Stack
 
 ### Frontend
+
 - **Nuxt 4** - Vue.js framework
 - **TypeScript** - Type safety
 - **Nuxt UI** - Component library
 - **Vue Query** - Data fetching
 
 ### Backend
+
 - **oRPC** - Type-safe API layer
 - **Better Auth** - Authentication
 - **Drizzle ORM** - Database operations
@@ -30,6 +32,7 @@ A modern, type-safe boilerplate for building web applications with **Nuxt 4**, *
 - **Zod** - Runtime validation
 
 ### Development
+
 - **ESLint** - Code linting
 - **Prettier** - Code formatting
 - **Drizzle Kit** - Database migrations
@@ -38,11 +41,13 @@ A modern, type-safe boilerplate for building web applications with **Nuxt 4**, *
 ## 📦 Quick Start
 
 ### Prerequisites
-- Node.js 18+ 
+
+- Node.js 22+
 - PostgreSQL database
 - Google OAuth credentials (for authentication)
 
 ### 1. Clone & Install
+
 ```bash
 git clone <your-repo-url>
 cd your-project-name
@@ -50,6 +55,7 @@ npm install
 ```
 
 ### 2. Environment Setup
+
 Create a `.env` file in the root directory:
 
 ```bash
@@ -65,6 +71,7 @@ NODE_ENV="development"
 ```
 
 ### 3. Database Setup
+
 ```bash
 # Generate migration files
 npm run db:generate
@@ -77,6 +84,7 @@ npm run db:auth
 ```
 
 ### 4. Development Server
+
 ```bash
 npm run dev
 ```
@@ -107,16 +115,19 @@ your-project/
 ## 🗄️ Database Management
 
 ### Generate Migrations
+
 ```bash
 npm run db:generate
 ```
 
 ### Run Migrations
+
 ```bash
 npm run db:migrate
 ```
 
 ### Update Auth Schema
+
 ```bash
 npm run db:auth
 ```
@@ -135,36 +146,40 @@ This boilerplate includes **Better Auth** with Google OAuth integration. The aut
 The project uses **oRPC** for end-to-end type safety:
 
 ### Adding New Procedures
+
 1. Create procedure in `server/orpc/procedures/`
 2. Add to router in `server/orpc/router/`
 3. Use in frontend with `useOrpc()`
 
 ### Example Usage
+
 ```typescript
 // Frontend query
-const { data, isLoading } = useHello()
+const { data, isLoading } = useHello();
 
 // Backend procedure
-export const hello = publicProcedure
-  .handler(() => {
-    return "Hello from oRPC!"
-  })
+export const hello = publicProcedure.handler(() => {
+  return "Hello from oRPC!";
+});
 ```
 
 ## 🧹 Code Quality
 
 ### Linting
+
 ```bash
 npm run lint        # Check for issues
 npm run lint:fix    # Auto-fix issues
 ```
 
 ### Type Checking
+
 ```bash
 npm run type-check
 ```
 
 ### Development Tools
+
 - **ESLint** - Code linting with Vue, TypeScript rules
 - **Prettier** - Automatic code formatting
 - **Import Sorting** - Organized imports
@@ -173,16 +188,19 @@ npm run type-check
 ## 🚀 Deployment
 
 ### Build for Production
+
 ```bash
 npm run build
 ```
 
 ### Preview Production Build
+
 ```bash
 npm run preview
 ```
 
 ### Deployment Options
+
 - **Vercel** - Zero-config deployment
 - **Netlify** - JAMstack deployment
 - **Railway** - Full-stack deployment
@@ -191,15 +209,18 @@ npm run preview
 ## 📚 Key Concepts
 
 ### Composables
+
 - `useOrpc()` - Access to type-safe API client
 - `useUser()` - User authentication state
 
 ### Type Safety
+
 - **Frontend to Backend** - oRPC provides end-to-end types
 - **Database** - Drizzle ORM generates types from schema
 - **Environment** - Zod validates environment variables
 
 ### Authentication Flow
+
 1. User clicks "Sign in with Google"
 2. Better Auth handles OAuth flow
 3. User data stored in PostgreSQL
