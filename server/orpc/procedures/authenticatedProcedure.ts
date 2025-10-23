@@ -1,6 +1,6 @@
 import { ORPCError } from "@orpc/server";
 
-import { auth } from "~/server/utils/auth";
+import { auth } from "~~/server/utils/auth";
 
 import { publicProcedure } from "./publicProcedure";
 

@@ -3,8 +3,8 @@ import "dotenv/config";
 import { betterAuth } from "better-auth";
 import { drizzleAdapter } from "better-auth/adapters/drizzle";
 
-import { env } from "../../shared/env/server";
 import { getDb } from "../database";
+import { env } from "./env";
 
 export const auth = betterAuth({
   database: drizzleAdapter(getDb(), {

@@ -3,7 +3,7 @@ import { RPCLink } from "@orpc/client/fetch";
 import type { RouterClient } from "@orpc/server";
 import { createORPCVueQueryUtils } from "@orpc/vue-query";
 
-import type { Router } from "~/server/orpc/router";
+import type { Router } from "~~/server/orpc/router";
 
 export default defineNuxtPlugin(() => {
   const event = useRequestEvent();
